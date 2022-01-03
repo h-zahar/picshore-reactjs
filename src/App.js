@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home/Home";
 
+import AuthProvider from './Contexts/AuthProvider';
 import initializeAuthentication from './Firebase/firebase.init';
 
 initializeAuthentication();
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
      <Router>
           <Switch>
             <Route path="/">
@@ -24,7 +25,7 @@ function App() {
             </Route>
           </Switch>
       </Router>
-    </div>
+    </AuthProvider>
   );
 }
 
