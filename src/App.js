@@ -7,6 +7,10 @@ import {
 } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home/Home";
 
+import initializeAuthentication from './Firebase/firebase.init';
+
+initializeAuthentication();
+
 function App() {
   return (
     <div>
