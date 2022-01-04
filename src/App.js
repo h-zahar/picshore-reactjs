@@ -15,6 +15,7 @@ import About from "./Components/Pages/Home/About/About";
 import PhotoDetails from "./Components/Pages/Photos/Photos/PhotoDetails";
 import PrivateRoute from "./Components/Pages/PrivateRoute/PrivateRoute";
 import Dashboard from "./Components/Pages/Dashboard/Dashboard/Dashboard";
+import ExplorePhotos from "./Components/Pages/Photos/Photos/ExplorePhotos";
 
 initializeAuthentication();
 
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route exact path="/contact">
               <ContactUs />
+            </Route>
+            <Route exact path="/photos">
+              <ExplorePhotos />
             </Route>
             <Route path="/login">
               <Login />
