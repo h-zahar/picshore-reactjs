@@ -17,7 +17,7 @@ const AllImages = () => {
     return (
         <div>
             <div className='container'>
-                <h4 className="text-center m-4">Manage All Orders</h4><hr />
+                <h4 className="text-center m-4">Manage All Images</h4><hr />
             </div>
             {
                 allImages[0]?._id &&
