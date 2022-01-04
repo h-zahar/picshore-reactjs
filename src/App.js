@@ -1,19 +1,28 @@
 import * as React from "react";
 import './App.css';
 import {
-  Routes,
+  Switch,
   Route
 } from "react-router-dom";
-import Home from "./Components/Pages/Home/Home";
+
+import AuthProvider from './Contexts/AuthProvider';
+import initializeAuthentication from './Firebase/firebase.init';
+import Home from "./Components/Pages/Home/Home/Home";
+
+initializeAuthentication();
 
 function App() {
   return (
-    <div>
-     <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="home" element={<Home />} />
-    </Routes>
-    </div>
+    <AuthProvider>
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+          </Switch>
+    </AuthProvider>
   );
 }
 
