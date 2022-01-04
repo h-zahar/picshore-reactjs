@@ -73,7 +73,7 @@ const AllImage = (props) => {
                 }
                 {
                     isApproved &&
-                    <button style={{background: 'none', border: 'none'}}><span className="text-success" onClick={() => handleApproval(_id)}>Shipped</span></button>
+                    <button style={{background: 'none', border: 'none'}}><span className="text-success" onClick={() => handleApproval(_id)}>Approved</span></button>
                 }</p>
                 <p>8. <button style={{background: 'none', border: 'none'}}><span className="text-danger" onClick={() => handleDelete(_id)}>Cancel?</span></button></p>
             </div>
