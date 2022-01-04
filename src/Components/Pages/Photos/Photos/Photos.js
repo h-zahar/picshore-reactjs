@@ -8,7 +8,7 @@ const Photos = () => {
     const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/h-zahar/picshore-reactjs/structure/public/photo.json`)
+        fetch(`https://raw.githubusercontent.com/h-zahar/picshore-reactjs/photos/public/photo.json`)
             .then(res => res.json())
             .then(data =>{
                 setPhotos(data);
