@@ -18,6 +18,15 @@ const Header = () => {
                                         <li className="nav-item">
                                             <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#764ABC' })} className="nav-link active mx-1  " aria-current="page" to="/home">HOME</NavLink>
                                         </li>
+
+                                        <li className="nav-item">
+                                            <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#764ABC' })} className="nav-link active mx-1  " aria-current="page" to="/login">LOGIN</NavLink>
+                                        </li>
+
+                                        <li className="nav-item">
+                                            <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#764ABC' })} className="nav-link active mx-1  " aria-current="page" to="/register">REGISTER</NavLink>
+                                        </li>
+
                                       {/*   <li className="nav-item">
                                             <NavLink style={({ isActive }) => ({ color: isActive ? 'orange' : '#764ABC' })} className="nav-link active mx-1  " to="/mobiles">SHOP</NavLink>
                                         </li>
