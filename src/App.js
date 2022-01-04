@@ -12,6 +12,7 @@ import ContactUs from "./Components/Pages/Home/ContactUs/ContactUs";
 import Login from "./Components/Pages/Login/Login";
 import Register from "./Components/Pages/Register/Register";
 import About from "./Components/Pages/Home/About/About";
+import PhotoDetails from "./Components/Pages/Photos/Photos/PhotoDetails";
 import Dashboard from "./Components/Pages/Dashboard/Dashboard/Dashboard";
 
 initializeAuthentication();
@@ -41,6 +42,9 @@ function App() {
             <Route path="/dashboard">
               <Dashboard />
             </Route>
+            <Route exact path="/image/:id">
+            <PhotoDetails></PhotoDetails>
+          </Route>
           </Switch>
     </AuthProvider>
   );
