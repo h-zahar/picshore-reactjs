@@ -6,9 +6,9 @@ const PrivateRoute = ({ children, ...rest }) => {
     const {user, isLoading} = useAuth();
     if (isLoading)
     {
-        return <div className="d-flex justify-content-center mt-4">
-            <h4>Please Wait...</h4>
-        </div>
+        return <div className="d-flex justify-content-center mt-4"><div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div></div>
     }
 
     return (
