@@ -27,11 +27,14 @@ function App() {
             <Route exact path="/home">
               <Home />
             </Route>
-            <Route exact path="/home">
+            {/* <Route exact path="/home">
               <About />
-            </Route>
+            </Route> */}
             <Route exact path="/contact">
               <ContactUs />
+            </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
             <Route path="/login">
               <Login />
