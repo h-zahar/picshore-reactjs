@@ -8,6 +8,8 @@ import {
 import AuthProvider from './Contexts/AuthProvider';
 import initializeAuthentication from './Firebase/firebase.init';
 import Home from "./Components/Pages/Home/Home/Home";
+import ContactUs from "./Components/Pages/Home/ContactUs/ContactUs";
+import About from "./Components/Pages/Home/About/About";
 
 initializeAuthentication();
 
@@ -15,11 +17,17 @@ function App() {
   return (
     <AuthProvider>
           <Switch>
-            <Route path="/">
-              <Home />
+            <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
-            <Route path="/home">
-              <Home />
+            <Route exact path="/contact">
+              <ContactUs />
             </Route>
           </Switch>
     </AuthProvider>
