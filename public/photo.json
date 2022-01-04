@@ -8,6 +8,8 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "price": 10,
+        "option": "Paid",
         "paidSrc": "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg",
         "freeSrc":"https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg"
       },
@@ -20,6 +22,7 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "option": "Free",
         "paidSrc": "https://image.freepik.com/free-vector/abstract-paper-style-2022-calendar_52683-78535.jpg",
         "freeSrc":"https://image.freepik.com/free-photo/madakaripura-waterfall-is-tallest-waterfall-java_335224-388.jpg"
       },
@@ -32,6 +35,8 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "price":9,
+        "option": "Paid",
         "paidSrc": "https://image.freepik.com/free-vector/abstract-paper-style-2022-calendar_52683-78535.jpg",
         "freeSrc":"https://image.freepik.com/free-psd/gold-2021-new-year-3d-rendering-isolated-transparent-background_106244-1804.jpg"
       },
@@ -44,6 +49,7 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "option": "Free",
         "paidSrc": "https://image.freepik.com/free-photo/beautiful-shot-wooden-suspension-bridge-leading-dark-mysterious-forest_181624-4039.jpg",
         "freeSrc":"https://image.freepik.com/free-photo/beautiful-aerial-shot-forest-enveloped-creepy-mist-fog_181624-2659.jpg"
       },
@@ -56,6 +62,8 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "price":11,
+        "option": "Paid",
         "paidSrc": "https://image.freepik.com/free-photo/seljalandsfoss-waterfall-during-sunset-beautiful-waterfall-iceland_335224-596.jpg",
         "freeSrc":"https://image.freepik.com/free-photo/madakaripura-waterfall-is-tallest-waterfall-java_335224-388.jpg"
       },
@@ -68,6 +76,7 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "option": "Free",
         "paidSrc": "https://image.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148917281.jpg",
         "freeSrc":"https://image.freepik.com/free-vector/flat-abstract-wireframe-background_23-2148995803.jpg"
       },
@@ -80,6 +89,8 @@
         "photographer": "Sharif Rashed",
         "photographer_url": "https://www.facebook.com/sharif.rashed01/",
         "photographer_id": 680589,
+        "price":12,
+        "option": "Paid",
         "paidSrc": "https://image.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg",
         "freeSrc":"https://image.freepik.com/free-vector/flat-design-adventure-background_23-2149059266.jpg"
       }

@@ -1,0 +1,7 @@
+.bannerTop{
+    background-image: url("https://image.freepik.com/free-vector/2022-new-year-sign-black-numbers-2022-with-golden-glitter-numbers-black-background-vector-luxury-text-2022-happy-new-year_145391-812.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    position: relative;
+}
