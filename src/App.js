@@ -4,12 +4,14 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Home from "./Components/Pages/Home/Home/Home";
 
 import AuthProvider from './Contexts/AuthProvider';
 import initializeAuthentication from './Firebase/firebase.init';
+import Home from "./Components/Pages/Home/Home/Home";
+import ContactUs from "./Components/Pages/Home/ContactUs/ContactUs";
 import Login from "./Components/Pages/Login/Login";
 import Register from "./Components/Pages/Register/Register";
+import About from "./Components/Pages/Home/About/About";
 
 initializeAuthentication();
 
@@ -20,8 +22,14 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/home">
+            <Route exact path="/home">
               <Home />
+            </Route>
+            <Route exact path="/home">
+              <About />
+            </Route>
+            <Route exact path="/contact">
+              <ContactUs />
             </Route>
             <Route path="/login">
               <Login />
