@@ -31,12 +31,12 @@ const Dashboard = () => {
                     <MyImages />
                 </Route>
 
-                <Route exact path={`${path}/all-images`}>
+                <Route exact path={`${path}/profile`}>
                     <Profile />
                 </Route>
 
                 {/* <AdminRoute exact path={`${path}/profile`}> */}
-                <Route exact path={`${path}/profile`}>
+                <Route exact path={`${path}/all-images`}>
                     <AllImages />
                 </Route>
                 {/* </AdminRoute> */}

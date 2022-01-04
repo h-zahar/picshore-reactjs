@@ -5,19 +5,19 @@ import "./Photos.css";
 
 const Photos = () => {
     const [categories, setCategories] = useState([]);
-    const [photos, setPhotos] = useState([]);
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/h-zahar/picshore-reactjs/photos/public/photo.json`)
+        fetch(`http://localhost:5000/images`)
             .then(res => res.json())
             .then(data =>{
-                setPhotos(data);
+                setImages(data);
                 setCategories(data);
             } )
     }, [])
 // Filter
 const filterResult = (paidPhotos) => {
-    const result = photos.filter(currentData => {
+    const result = images.filter(currentData => {
         return currentData.option === paidPhotos;
     });
     setCategories(result);
@@ -27,17 +27,17 @@ const filterResult = (paidPhotos) => {
 // Search
     const handleSearch = e =>{
         const searchText = e.target.value;
-        const result = photos.filter(photo=>photo.category.toLowerCase().includes(searchText.toLowerCase()));
+        const result = images.filter(photo=>photo.category.toLowerCase().includes(searchText.toLowerCase()));
         setCategories(result);
 }
     return (
         <div className='bg-light'>
-            <div className="bannerTop">
+            <div className="bannerTop py-5">
                 <div className="bannerInput text-center p-4 text-light">
                     <h1>Graphic resources for everyone</h1>
                     <h2>Download High-Quality Images. Free Stock Photos, Vectors & PSD</h2>
-                   <div className="text-center pt-2"> 
-                        <input placeholder='Search blood group' className='custom-input w-50' type="text" onChange={handleSearch} />
+                   <div className="text-center pt-2 custom-form my-3"> 
+                        <input placeholder='Search Category' className='custom-input w-50' type="text" onChange={handleSearch} />
                         <p>Examples:
 Flyer T shirt mockup Happy new year 2022</p>
                     </div> 
@@ -51,15 +51,15 @@ Flyer T shirt mockup Happy new year 2022</p>
                     <hr />
                 </div>
                 
-                <div className="row row-cols-1 row-cols-md-3">
+                <div className="row row-cols-1 row-cols-md-3 gy-4">
                     {categories.length == 0 ?
                         <div className="w-100 text-center">
                             <CircularProgress />
                         </div>
                         :
-                        categories.map(photo => <Photo
-                            key={photo.id}
-                            photo={photo}
+                        categories.map(image => <Photo
+                            key={image._id}
+                            image={image}
                         />)
                     }
                 </div>
