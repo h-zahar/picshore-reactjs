@@ -13,6 +13,7 @@ import Login from "./Components/Pages/Login/Login";
 import Register from "./Components/Pages/Register/Register";
 import About from "./Components/Pages/Home/About/About";
 import PhotoDetails from "./Components/Pages/Photos/Photos/PhotoDetails";
+import PrivateRoute from "./Components/Pages/PrivateRoute/PrivateRoute";
 
 initializeAuthentication();
 
@@ -38,9 +39,9 @@ function App() {
             <Route path="/register">
               <Register/>
             </Route>
-            <Route exact path="/photo/:id">
+            <PrivateRoute exact path="/photo/:id">
             <PhotoDetails></PhotoDetails>
-          </Route>
+          </PrivateRoute>
           </Switch>
     </AuthProvider>
   );

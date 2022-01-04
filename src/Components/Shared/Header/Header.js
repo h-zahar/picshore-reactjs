@@ -66,10 +66,10 @@ const Header = () => {
                                     </li>
                                 </ul>
                         }   
-                                {/* <div className="text-center">
+                                <div className="text-center">
                                     <img className="img-fluid w-25 rounded-circle px-1" src={user?.photoURL} alt="" />
                                     <p className="text-info">{user?.displayName}</p>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </nav>
