@@ -5,19 +5,19 @@ import "./Photos.css";
 
 const Photos = () => {
     const [categories, setCategories] = useState([]);
-    const [photos, setPhotos] = useState([]);
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch(`https://raw.githubusercontent.com/h-zahar/picshore-reactjs/photos/public/photo.json`)
+        fetch(`http://localhost:5000/images`)
             .then(res => res.json())
             .then(data =>{
-                setPhotos(data);
+                setImages(data);
                 setCategories(data);
             } )
     }, [])
 // Filter
 const filterResult = (paidPhotos) => {
-    const result = photos.filter(currentData => {
+    const result = images.filter(currentData => {
         return currentData.option === paidPhotos;
     });
     setCategories(result);
@@ -27,7 +27,7 @@ const filterResult = (paidPhotos) => {
 // Search
     const handleSearch = e =>{
         const searchText = e.target.value;
-        const result = photos.filter(photo=>photo.category.toLowerCase().includes(searchText.toLowerCase()));
+        const result = images.filter(photo=>photo.category.toLowerCase().includes(searchText.toLowerCase()));
         setCategories(result);
 }
     return (
@@ -57,9 +57,9 @@ Flyer T shirt mockup Happy new year 2022</p>
                             <CircularProgress />
                         </div>
                         :
-                        categories.map(photo => <Photo
-                            key={photo.id}
-                            photo={photo}
+                        categories.map(image => <Photo
+                            key={image._id}
+                            image={image}
                         />)
                     }
                 </div>

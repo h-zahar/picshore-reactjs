@@ -38,7 +38,7 @@ function App() {
             <Route path="/register">
               <Register/>
             </Route>
-            <Route exact path="/photo/:id">
+            <Route exact path="/image/:id">
             <PhotoDetails></PhotoDetails>
           </Route>
           </Switch>
