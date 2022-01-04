@@ -1,7 +1,6 @@
 import * as React from "react";
 import './App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -15,7 +14,6 @@ initializeAuthentication();
 function App() {
   return (
     <AuthProvider>
-     <Router>
           <Switch>
             <Route path="/">
               <Home />
@@ -24,7 +22,6 @@ function App() {
               <Home />
             </Route>
           </Switch>
-      </Router>
     </AuthProvider>
   );
 }
