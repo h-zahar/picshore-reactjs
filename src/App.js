@@ -14,6 +14,7 @@ import Register from "./Components/Pages/Register/Register";
 import About from "./Components/Pages/Home/About/About";
 import PhotoDetails from "./Components/Pages/Photos/Photos/PhotoDetails";
 import Dashboard from "./Components/Pages/Dashboard/Dashboard/Dashboard";
+import PrivateRoute from './Components/Pages/PrivateRoute/PrivateRoute';
 
 initializeAuthentication();
 
@@ -42,9 +43,9 @@ function App() {
             <Route path="/register">
               <Register />
             </Route>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
             <Route exact path="/image/:id">
             <PhotoDetails></PhotoDetails>
           </Route>
