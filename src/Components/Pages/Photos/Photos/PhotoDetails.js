@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import useAuth from '../../../../Hooks/useAuth';
+import Footer from '../../../Shared/Footer/Footer';
 import Header from '../../../Shared/Header/Header';
 
 const PhotoDetails = () => {
@@ -56,6 +57,7 @@ const PhotoDetails = () => {
                     <img className='img-fluid' src={photos?.freeSrc} alt="" />
                </div>
            </div>
+           <Footer/>
         </div>
     );
 };

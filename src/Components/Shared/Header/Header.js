@@ -29,7 +29,7 @@ const Header = () => {
                                     <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " aria-current="page" to="/home">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/bikes">Explore</NavLink>
+                                    <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/photos">Explore</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/about">About Us</NavLink>
@@ -43,8 +43,8 @@ const Header = () => {
                                 </li>
 
                                 <li className="nav-item">
-                                    {/* <button onClick={logOut} className="btn btn-dark fs-6">Logout</button> */}
-                                    <Button onClick={logOut} variant="outlined" color="error">Logout</Button>
+                                    <button onClick={logOut} className="btn btn-outline-light fs-6">Logout</button>
+                                    {/* <Button onClick={logOut} variant="outlined" color="error">Logout</Button> */}
                                 </li>
                             </ul>
                                 : <ul className="navbar-nav ms-auto">
@@ -53,7 +53,7 @@ const Header = () => {
                                         <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " aria-current="page" to="/home">Home</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/bikes">Explore</NavLink>
+                                        <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/photos">Explore</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink activeStyle={activeStyle} className="nav-link active mx-1 fs-6 " to="/about">About Us</NavLink>
@@ -66,10 +66,10 @@ const Header = () => {
                                     </li>
                                 </ul>
                         }   
-                                {/* <div className="text-center">
+                                <div className="text-center">
                                     <img className="img-fluid w-25 rounded-circle px-1" src={user?.photoURL} alt="" />
                                     <p className="text-info">{user?.displayName}</p>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </nav>
