@@ -41,7 +41,7 @@ const DashHeader = ({ url }) => {
                         }
 
                         {
-                            !isAdminLoading &&
+                            isAdmin && !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/all-images`}>All Images</NavLink>
                         }
 
