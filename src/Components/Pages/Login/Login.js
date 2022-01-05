@@ -33,7 +33,7 @@ const Login = () => {
                 <div className='conatiner'>
                     <div style={{width: '100%'}} className="mb-4">
                         <div style={{maxWidth: '400px', minWidth: '250px'}} className="py-4 px-5 mx-auto shadow-lg rounded" >
-                            <form className="form-sizing d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
+                            <form className="form-sizing d-flex custom-form flex-column" onSubmit={handleSubmit(onSubmit)}>
                                 <h3 className="text-center mb-5 mt-4">Login</h3>
 
                                 <label><strong>Enter Email</strong></label>

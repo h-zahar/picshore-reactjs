@@ -16,6 +16,7 @@ import PhotoDetails from "./Components/Pages/Photos/Photos/PhotoDetails";
 import PrivateRoute from "./Components/Pages/PrivateRoute/PrivateRoute";
 import Dashboard from "./Components/Pages/Dashboard/Dashboard/Dashboard";
 import ExplorePhotos from "./Components/Pages/Photos/Photos/ExplorePhotos";
+// import PrivateRoute from './Components/Pages/PrivateRoute/PrivateRoute';
 
 initializeAuthentication();
 
@@ -44,12 +45,15 @@ function App() {
             <Route path="/register">
               <Register />
             </Route>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
             <PrivateRoute exact path="/image/:id">
-            <PhotoDetails></PhotoDetails>
-          </PrivateRoute>
+              <PhotoDetails></PhotoDetails>
+            </PrivateRoute>
+            {/* <Route exact path="/image/:id">
+            
+          </PrivateRoute> */}
           </Switch>
     </AuthProvider>
   );
