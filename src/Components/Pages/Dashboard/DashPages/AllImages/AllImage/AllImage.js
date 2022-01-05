@@ -6,7 +6,7 @@ const AllImage = (props) => {
     const { allImages, setAllImages } = props;
 
     const handleApproval = (id) => {
-        fetch(`http://localhost:5000/images`, {
+        fetch(`https://api-picshore.herokuapp.com/images`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const AllImage = (props) => {
         if(!window.confirm('Are you sure to cancel?')) {
             return;
         }
-        fetch(`http://localhost:5000/images/${id}`, {
+        fetch(`https://api-picshore.herokuapp.com/images/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'aplplication/json'

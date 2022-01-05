@@ -13,7 +13,7 @@ const PhotoDetails = () => {
     const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/images/${id}`)
+        fetch(`https://api-picshore.herokuapp.com/images/${id}`)
             .then(res => res.json())
             .then(data => setPhotos(data))
     }, [id])

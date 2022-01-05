@@ -8,7 +8,7 @@ const MyImage = (props) => {
         if(!window.confirm('Are you sure to cancel?')) {
             return;
         }
-        fetch(`http://localhost:5000/images/${id}`, {
+        fetch(`https://api-picshore.herokuapp.com/images/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'aplplication/json'

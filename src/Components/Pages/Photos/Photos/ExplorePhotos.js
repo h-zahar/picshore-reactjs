@@ -9,7 +9,7 @@ const ExplorePhotos = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/images`)
+        fetch(`https://api-picshore.herokuapp.com/images`)
             .then(res => res.json())
             .then(data =>{
                 setImages(data);

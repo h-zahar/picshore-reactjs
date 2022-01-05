@@ -5,7 +5,7 @@ import AllImage from '../AllImage/AllImage';
 const AllImages = () => {
     const [allImages, setAllImages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/all-images')
+        fetch('https://api-picshore.herokuapp.com/all-images')
         .then(res => res.json())
         .then(data => setAllImages(data))
         .catch(error => {

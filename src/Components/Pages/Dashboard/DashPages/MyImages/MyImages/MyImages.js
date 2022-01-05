@@ -6,7 +6,7 @@ const MyImages = () => {
     const { user } = useAuth();
     const [myImages, setMyImages] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/images/${user?.email}`)
+        fetch(`https://api-picshore.herokuapp.com/images/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyImages(data))
         .catch(error => {

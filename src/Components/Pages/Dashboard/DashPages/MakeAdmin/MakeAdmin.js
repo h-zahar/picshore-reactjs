@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const { setIsAdmin } = useAuth();
     const { register, formState: { errors }, reset, handleSubmit } = useForm();
     const onSubmit = data => {
-        fetch(`http://localhost:5000/users/${data.email}`, {
+        fetch(`https://api-picshore.herokuapp.com/users/${data.email}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

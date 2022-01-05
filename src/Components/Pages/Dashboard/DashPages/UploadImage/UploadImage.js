@@ -9,7 +9,7 @@ const UploadImage = () => {
         data.isApproved = false;
         data.photographer_email = user.email;
         data.photographer = user.displayName;
-        fetch('http://localhost:5000/images', {
+        fetch('https://api-picshore.herokuapp.com/images', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

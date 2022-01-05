@@ -14,7 +14,7 @@ const useFirebase = () => {
     const auth = getAuth();
 
     const sendUserToDatabase = (fetchData) => {
-        fetch('http://localhost:5000/users', {
+        fetch('https://api-picshore.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -142,7 +142,7 @@ const useFirebase = () => {
 
     useEffect(() => {
         setIsAdminLoading(true);
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://api-picshore.herokuapp.com/users/${user?.email}`)
         .then(res => res.json())
         .then(data => setIsAdmin(data?.isAdmin))
         .catch(error => {
