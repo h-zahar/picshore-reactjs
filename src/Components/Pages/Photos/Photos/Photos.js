@@ -8,7 +8,7 @@ const Photos = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/images`)
+        fetch(`http://localhost:5000/images/featured`)
             .then(res => res.json())
             .then(data =>{
                 setImages(data);
