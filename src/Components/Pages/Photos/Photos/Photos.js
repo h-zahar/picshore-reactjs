@@ -9,7 +9,7 @@ const Photos = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch(`https://api-picshore.herokuapp.com/images/featured`)
+        fetch(`https://api-picshore.herokuapp.com/featured`)
             .then(res => res.json())
             .then(data =>{
                 setImages(data);
