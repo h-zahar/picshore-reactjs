@@ -35,21 +35,14 @@ const Dashboard = () => {
                     <Profile />
                 </Route>
 
-                {/* <AdminRoute exact path={`${path}/profile`}> */}
-                <Route exact path={`${path}/all-images`}>
+                <AdminRoute exact path={`${path}/all-images`}>
                     <AllImages />
-                </Route>
-                {/* </AdminRoute> */}
-
-                {/* <AdminRoute exact path={`${path}/make-admin`}> */}
-                <Route exact path={`${path}/make-admin`}>
-                    <MakeAdmin />
-                </Route>
-                {/* </AdminRoute> */}
+                </AdminRoute>
 
                 <AdminRoute exact path={`${path}/make-admin`}>
                     <MakeAdmin />
                 </AdminRoute>
+
             </Switch>
 
         </div>

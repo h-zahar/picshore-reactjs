@@ -26,29 +26,27 @@ const DashHeader = ({ url }) => {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav mx-auto">
                         {
-                            !isAdmin && !isAdminLoading &&
+                            !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/upload`}>Upload Image</NavLink>
                         }
 
                         {
-                            !isAdmin && !isAdminLoading &&
+                            !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/my-images`}>My Images</NavLink>
                         }
 
                         {
-                            !isAdmin && !isAdminLoading &&
+                            !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/profile`}>Profile</NavLink>
                         }
 
                         {
-                            // isAdmin && !isAdminLoading &&
-                            !isAdmin && !isAdminLoading &&
+                            !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/all-images`}>All Images</NavLink>
                         }
 
                         {
-                            // isAdmin && !isAdminLoading &&
-                            !isAdmin && !isAdminLoading &&
+                            isAdmin && !isAdminLoading &&
                             <NavLink className="nav-link" exact to={`${url}/make-admin`}>Make Admin</NavLink>
                         }
 

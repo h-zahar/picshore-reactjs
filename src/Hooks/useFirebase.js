@@ -185,6 +185,7 @@ const useFirebase = () => {
         googleRegisterError,
         setUser,
         setIsLoading,
+        setIsAdmin,
         setIsAdminLoading,
         registerWithMail,
         loginWithMail,

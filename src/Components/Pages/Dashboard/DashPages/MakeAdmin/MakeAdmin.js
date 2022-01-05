@@ -1,7 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../../../../Hooks/useAuth';
 
 const MakeAdmin = () => {
+    const { setIsAdmin } = useAuth();
     const { register, formState: { errors }, reset, handleSubmit } = useForm();
     const onSubmit = data => {
         fetch(`http://localhost:5000/users/${data.email}`, {
@@ -13,6 +15,7 @@ const MakeAdmin = () => {
         .then(res => res.json())
         .then(data => { 
             if (data) {
+                setIsAdmin(true);
                 reset();
             }
          })
