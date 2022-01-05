@@ -40,8 +40,14 @@ const useFirebase = () => {
             setGoogleLoginError('');
             setGoogleRegisterError('');
             setUser(result.user);
-            const putData = {fullName: result.user.displayName, email: result.user.email, userImg: result.user.photoURL, isAdmin: false};
-            sendUserToDatabase(putData);
+            if (method === 'login') {
+                const putData = {fullName: result.user.displayName, email: result.user.email, userImg: result.user.photoURL};
+                sendUserToDatabase(putData);
+            }
+            else if (method === 'register') {
+                const putData = {fullName: result.user.displayName, email: result.user.email, userImg: result.user.photoURL, isAdmin: false};
+                sendUserToDatabase(putData);
+            }
             history.push(redirected_uri);
         })
         .catch((error) => {
